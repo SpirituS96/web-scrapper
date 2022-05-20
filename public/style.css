@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 90vw;
+  display: flex;
+  align-self: center;
+  flex-direction: column;;
+  padding: 5px;
+}
+
+p, input, label {
+  margin: 5px;
+}
+
+input {
+  width: 100%;
+}
+
+img {
+  height: 200px;
+}

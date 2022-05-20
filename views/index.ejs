@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Поиск</h1>
+    <form method="post" action="/">
+      <label for="url">Адрес сайта<input type="text" name="url" id="url" required/></label>
+      <p>
+        (Каждый селектор должен начинаться с "." для поиска по классу, "#" для
+        поиска по id, иначе будет осуществлен поиск по тегу)
+      </p>
+      <label for="title-selector"
+        >Селектор заголовка<input type="text" name="titleSelector" id="title-selector" required/></label
+      ><label for="price-selector"
+        >Селектор цены<input type="text" name="priceSelector" id="price-selector" required/></label
+      ><label for="img-selector"
+        >Селектор изображения<input type="text" name="imgSelector" id="img-selector" required/></label
+      ><label for="description-selector"
+        >Селектор поля характеристик<input
+          type="text"
+          name="descriptionSelector"
+          id="description-selector"
+          required/></label>
+      <input type="submit" value="Поиск">
+    </form>
+    <%- data? data : '' %> 
+  </body>
+</html>
